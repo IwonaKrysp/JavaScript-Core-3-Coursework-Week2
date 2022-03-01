@@ -9,5 +9,14 @@ fetch("https://dog.ceo/api/breeds/image/random")
     imgEl.src = imageUrl;
 
     contentDiv.appendChild(imgEl);
+
+
+    let btn = document.getElementById("nextBtn");
+
+    imgEl.addEventListener("click", function goNext(){
+     return imageUrl;
+    }
+    );
+
   })
   .catch((err) => console.log("something went wrong"));
